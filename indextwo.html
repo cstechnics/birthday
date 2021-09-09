@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="indextwo.css">
+    <style>
+        .mySlides {display:none;}
+        </style>
+         <!-- <audio controls autoplay>
+        <source src="Kalli Poonkuyile Thenmavun Kombathu Movie SongMohanlalShobhana Nedumudi Venu (mp3cut.net).mp3">
+    
+      </audio> -->
+      <audio controls autoplay hidden="" src="Kalli Poonkuyile Thenmavun Kombathu Movie SongMohanlalShobhana Nedumudi Venu (mp3cut.net).mp3" type ="audio/mp3"">your browser does not support Html5</audio>
+</head>
+<body>
+    <div class="w3-content w3-section" style="max-width:500px">
+        <img class="mySlides" src="IMG-20200628-WA0170-01.jpeg" style="width:100%">
+        <img class="mySlides" src="WhatsApp Image 2020-07-12 at 12.31.27 PM (1).jpeg" style="width:100%">
+        <img class="mySlides" src="WhatsApp Image 2020-07-12 at 12.31.27 PM (5).jpeg"style="width:100%">
+        <img class="mySlides" src="WhatsApp Image 2020-07-12 at 12.31.27 PM (3).jpeg" style="width:100%">
+      </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+    <script src="index.js"></script>
+</body>
+</html>
