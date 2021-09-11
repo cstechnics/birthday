@@ -4,3 +4,24 @@ body {
     background-attachment: fixed;
     background-size: 100% 100%;
   }
+  .responsive {
+    width: 100%;
+    position: absolute;
+    height: auto;
+  }
+.fixed {
+  position: absolute;
+  bottom: 0;
+  right: 54px;
+  width: 200px;
+  }
+  .container .btn-holder {
+    justify-content: flex-end;
+    display: flex;
+    position: fixed;
+    bottom: 40px;
+    right: 125px;
+   
+    color: rgb(0, 0, 163);
+    
+  }
